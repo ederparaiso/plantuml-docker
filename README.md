@@ -22,8 +22,8 @@ Examples:
 
 ```sh
 # display help
-docker run --rm plantuml:latest -help
+docker run --rm plantuml-docker:latest -help
 
 # process local file and generate outputs as non root user
-docker run --rm -v "$(pwd):/data" -u "$(id -u):$(id -g)" plantuml:latest -tpng /data/file.puml
+docker run --rm -v "$(pwd):/data" -u "$(id -u):$(id -g)" plantuml-docker:latest -tpng /data/file.puml
 ```
